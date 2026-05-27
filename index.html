@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Демо Bootstrap</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+</head>
+<body>
+<div class="bg-stripes"></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+        <!-- Логотип ДРАЙВ - теперь ведёт на главную с плавной прокруткой -->
+        <a class="brand-logo" href="#top" onclick="scrollToTop(); return false;">ДРАЙВ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" style="border-color: rgba(255,255,255,0.15); color: var(--text-muted-light);">
+            <i class="bi bi-grid fs-5"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+            <ul class="navbar-nav align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">О нас</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-custom" href="#pricing">Тарифы</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-custom" href="#gallery">Галерея</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-custom" href="#contacts">Контакты</a></li>
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a href="#booking" class="btn btn-nav-cta">Бронь</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+<!-- Hero -->
+<section class="hero-wrapper">
+<div class="hero-bg"></div>
+<div class="hero-accent-line"></div>
+<div class="container hero-content">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="hero-badge"><span class="dot"></span> Трасса в Москве</div>
+            <h1 class="hero-title">Почувствуй<br><span>настоящий<br>драйв</span></h1>
+            <p class="hero-desc">Профессиональная трасса, мощные карта Honda GX270 и безопасная экипировка. Заезды для новичков, профи и корпоративных команд.</p>
+            <div class="d-flex gap-3 flex-wrap">
+                <a href="#booking" class="btn-primary-glow"><i class="bi bi-calendar-check"></i> Забронировать</a>
+                <a href="#pricing" class="btn-outline-glow"><i class="bi bi-tag"></i> Смотреть цены</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">70+</div>
+                    <div class="stat-label">км/ч макс.</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">850м</div>
+                    <div class="stat-label">длина трассы</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">картов</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- About -->
+<section id="about" class="section-block about-section">
+<div class="container">
+    <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+            <div class="about-image-wrapper">
+                <img src="HTB11PMWJpXXXXa3XXXXq6xXFXXXe (1).avif" alt="Картинг-центр Драйв">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <span class="section-label">О картинг-центре</span>
+            <h2 class="section-heading">Больше, чем просто <span style="color: var(--primary-color);">гонки</span></h2>
+            <p class="section-desc">«Драйв» — крытая трасса в центре Москвы. Работаем круглый год. Безопасность, скорость и незабываемые эмоции для каждого гостя.</p>
+            <div class="mt-4">
+                <div class="feature-row">
+                    <div class="feature-icon-circle"><i class="bi bi-speedometer2"></i></div>
+                    <div class="feature-info"><h6>Мощные карта</h6><p>Honda GX270, 9 л.с., разгон до 70 км/ч за 4 секунды</p></div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-icon-circle"><i class="bi bi-shield-fill-check"></i></div>
+                    <div class="feature-info"><h6>Полная экипировка</h6><p>Шлем, комбинезон и защита — всё включено в стоимость</p></div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-icon-circle"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div class="feature-info"><h6>Центр Москвы</h6><p>5 минут от метро, бесплатная парковка на 50 мест</p></div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-icon-circle"><i class="bi bi-clock-fill"></i></div>
+                    <div class="feature-info"><h6>Без выходных</h6><p>Пн–Пт 12:00–23:00, Сб–Вс 10:00–00:00</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="section-block pricing-section">
+<div class="container">
+    <div class="text-center mb-5">
+        <span class="section-label justify-content-center">Тарифы</span>
+        <h2 class="section-heading">Выберите свой <span style="color: var(--primary-color);">формат</span></h2>
+        <p class="section-desc mx-auto">Три формата заездов — от первого знакомства с трассой до корпоративного турнира.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-name">Новичок</div>
+                    <p class="pricing-desc">Первое знакомство с трассой</p>
+                </div>
+                <div class="pricing-body">
+                    <div class="pricing-price">1 500 <small>₽</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="bi bi-check2-circle"></i> 10 минут на трассе</li>
+                        <li><i class="bi bi-check2-circle"></i> Инструктаж 5 минут</li>
+                        <li><i class="bi bi-check2-circle"></i> Экипировка включена</li>
+                        <li><i class="bi bi-check2-circle"></i> Распечатка результатов</li>
+                    </ul>
+                </div>
+                <div class="pricing-footer"><button class="btn-pricing" onclick="scrollToBooking()">Выбрать</button></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="pricing-card featured">
+                <div class="pricing-header">
+                    <div class="pricing-name">Гонщик</div>
+                    <p class="pricing-desc">Максимум драйва и скорости</p>
+                </div>
+                <div class="pricing-body">
+                    <div class="pricing-price">3 500 <small>₽</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="bi bi-check2-circle"></i> 30 минут на трассе</li>
+                        <li><i class="bi bi-check2-circle"></i> Персональный тренер</li>
+                        <li><i class="bi bi-check2-circle"></i> VIP-экипировка</li>
+                        <li><i class="bi bi-check2-circle"></i> Видеозапись лучшего круга</li>
+                    </ul>
+                </div>
+                <div class="pricing-footer"><button class="btn-pricing btn-pricing-primary" onclick="scrollToBooking()">Выбрать</button></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-name">Команда</div>
+                    <p class="pricing-desc">Корпоративы и тимбилдинги</p>
+                </div>
+                <div class="pricing-body">
+                    <div class="pricing-price">45 000 <small>₽</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="bi bi-check2-circle"></i> Аренда трассы 2 часа</li>
+                        <li><i class="bi bi-check2-circle"></i> До 12 карт одновременно</li>
+                        <li><i class="bi bi-check2-circle"></i> Ведущий + судейство</li>
+                        <li><i class="bi bi-check2-circle"></i> Кубки и медали</li>
+                    </ul>
+                </div>
+                <div class="pricing-footer"><button class="btn-pricing" onclick="scrollToBooking()">Заказать</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="section-block gallery-section">
+<div class="container">
+    <div class="text-center mb-5">
+        <span class="section-label justify-content-center">Фотогалерея</span>
+        <h2 class="section-heading">Атмосфера <span style="color: var(--primary-color);">«Драйва»</span></h2>
+    </div>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="i 1 .jpg" alt="Гонка на трассе">
+            <div class="gallery-overlay"><span>Заезд на трассе</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="i (1).webp" alt="Картинг карта">
+            <div class="gallery-overlay"><span>Наша карта</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="14.jpg" alt="Команда пилотов">
+            <div class="gallery-overlay"><span>Командный заезд</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="XXL_height.webp" alt="Подиум">
+            <div class="gallery-overlay"><span>Награждение</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="103912-b7d80f2c-3f49-495d-89d4-aeb2600b32c2.jpg" alt="Экипировка">
+            <div class="gallery-overlay"><span>Экипировка</span></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Booking -->
+<section id="booking" class="section-block booking-section">
+<div class="container">
+    <div class="booking-wrapper">
+        <div class="row g-0">
+            <div class="col-lg-5">
+                <div class="booking-info">
+                    <span class="section-label">Бронирование</span>
+                    <h3>Забронировать <span>заезд</span></h3>
+                    <p>Заполните форму — мы подтвердим заявку в течение 15 минут и свяжемся с вами.</p>
+                    <div class="booking-advantage"><i class="bi bi-check-circle-fill"></i><span>Предоплата не требуется</span></div>
+                    <div class="booking-advantage"><i class="bi bi-check-circle-fill"></i><span>Бесплатная отмена за 24 часа</span></div>
+                    <div class="booking-advantage"><i class="bi bi-check-circle-fill"></i><span>Экипировка включена</span></div>
+                    <div class="booking-advantage"><i class="bi bi-check-circle-fill"></i><span>Подтверждение по SMS</span></div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="booking-form-area">
+                    <form id="bookingForm">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label class="form-label-custom">Имя</label>
+                                <input type="text" class="form-control form-control-custom" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label-custom">Телефон</label>
+                                <input type="tel" class="form-control form-control-custom" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label-custom">Дата</label>
+                                <input type="date" class="form-control form-control-custom" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-label-custom">Время</label>
+                                <select class="form-select form-select-custom" required>
+                                    <option selected disabled value="">Выберите слот</option>
+                                    <option>10:00</option><option>11:00</option><option>12:00</option>
+                                    <option>13:00</option><option>14:00</option><option>15:00</option>
+                                    <option>16:00</option><option>17:00</option><option>18:00</option>
+                                    <option>19:00</option><option>20:00</option><option>21:00</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label-custom">Тариф</label>
+                                <select class="form-select form-select-custom" required>
+                                    <option selected disabled value="">Выберите услугу</option>
+                                    <option>Новичок — 1 500 ₽</option>
+                                    <option>Гонщик — 3 500 ₽</option>
+                                    <option>Команда — 45 000 ₽</option>
+                                    <option>Детский заезд — 1 000 ₽</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label-custom">Комментарий</label>
+                                <textarea class="form-control form-control-custom" rows="3" placeholder="Особые пожелания..."></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn-submit">Отправить заявку</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Contacts -->
+<section id="contacts" class="section-block contacts-section">
+<div class="container">
+    <div class="text-center mb-5">
+        <span class="section-label justify-content-center">Контакты</span>
+        <h2 class="section-heading">Как нас <span style="color: var(--primary-color);">найти</span></h2>
+        <p class="section-desc mx-auto">Мы в центре Москвы — добраться легко на метро, машине или такси.</p>
+    </div>
+    <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+            <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="contact-card-text"><h6>Адрес</h6><p>ул. Автозаводская, 23, стр. 1</p></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div class="contact-card-text"><h6>Телефон</h6><a href="tel:+74951234567">+7 (495) 123-45-67</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div class="contact-card-text"><h6>Email</h6><a href="mailto:info@drive-karting.ru">info@drive-karting.ru</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="bi bi-clock-fill"></i></div>
+                <div class="contact-card-text"><h6>Время работы</h6><p>Пн–Пт 12:00–23:00<br>Сб–Вс 10:00–00:00</p></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="bi bi-whatsapp"></i></div>
+                <div class="contact-card-text"><h6>WhatsApp</h6><a href="https://wa.me/74951234567" target="_blank">Написать в чат</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="bi bi-telegram"></i></div>
+                <div class="contact-card-text"><h6>Telegram</h6><a href="https://t.me/drive_karting" target="_blank">@drive_karting</a></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="bi bi-car-front-fill"></i></div>
+                <div class="contact-card-text"><h6>Парковка</h6><p>Бесплатная, 50 мест</p></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="bi bi-headset"></i></div>
+                <div class="contact-card-text"><h6>Поддержка</h6><a href="mailto:support@drive-karting.ru">support@drive-karting.ru</a></div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="map-wrapper">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.656000%2C55.702000&z=15&l=map" allowfullscreen="true"></iframe>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-custom">
+<div class="container">
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="footer-brand">ДРАЙВ</div>
+            <p class="footer-desc">Крытая картинг-трасса в Москве. Скорость, безопасность и адреналин для каждого.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+            <div class="footer-title">Навигация</div>
+            <ul class="footer-links">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#pricing">Тарифы</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#booking">Бронирование</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+            <div class="footer-title">Информация</div>
+            <ul class="footer-links">
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Аренда</a></li>
+                <li><a href="#">Сертификаты</a></li>
+                <li><a href="#">Вакансии</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <div class="footer-title">Режим работы</div>
+            <ul class="footer-schedule list-unstyled">
+                <li><span>Пн – Пт:</span> 12:00 — 23:00</li>
+                <li><span>Сб – Вс:</span> 10:00 — 00:00</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Картинг-центр «Драйв». Все права защищены.</p>
+    </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Navbar scroll
+window.addEventListener('scroll', function() {
+    document.querySelector('.navbar-custom').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id = this.getAttribute('href');
+        if (id === '#') return;
+        const t = document.querySelector(id);
+        if (t) {
+            t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const nc = document.querySelector('.navbar-collapse');
+            if (nc && nc.classList.contains('show')) {
+                const bs = bootstrap.Collapse.getInstance(nc);
+                bs ? bs.hide() : new bootstrap.Collapse(nc).hide();
+            }
+        }
+    });
+});
+
+// Min date
+const di = document.querySelector('input[type="date"]');
+if (di) di.setAttribute('min', new Date().toISOString().split('T')[0]);
+
+// Scroll to booking
+function scrollToBooking() {
+    document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Form submit
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const orig = btn.innerText;
+    btn.innerText = 'Отправляем...'; btn.disabled = true;
+    setTimeout(() => {
+        alert('Заявка принята! Мы свяжемся с вами в течение 15 минут.');
+        this.reset(); btn.innerText = orig; btn.disabled = false;
+    }, 1200);
+});
+
+// Active nav on scroll
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+    });
+    document.querySelectorAll('.nav-link-custom').forEach(l => {
+        l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+    });
+});
+    </script>
+</body>
+</body>
+
+</html>
